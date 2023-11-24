@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="barra_ltlogo.css">
+
+
+    <title>Login</title>
+</head>
+
+<body>
+    
+    <input type="checkbox" id="chec">
+    <label for="chec">
+        <img src="img/incone_lua.png" alt="menu" id="icone">
+    </label>
+    <nav>
+        <ul id="menu">
+
+            <li>
+                <a href="index.html" id="H1">Home</a>
+            </li>
+            <li>
+                <a href="logo.html" id="L1">Login</a>
+            </li>
+            <li>
+                <a href="contact.html" id="C1">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Seja bem vindo</h1>
+            <h1>Com apenas um click</h1>
+            <img src="./img/astro.svg" class"left-login-image" alt="astro animacao" class="center" width="410px" height="400
+            px">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+                <br>
+                <div class="textfield">
+                    <label for="senha">Senha:</label>
+                    <input name="senha" type="password" placeholder="Senha">
+                </div>
+                <button class="btn-login" onclick="showLoginMessage()">Login</button>
+            </div>
+
+            <script>
+                function showLoginMessage() {
+                    alert("Seja bem Vindo.");
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+
+</html>

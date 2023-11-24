@@ -1,0 +1,121 @@
+/*para index e contact do html*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    color: aliceblue; /* cor da letra*/
+    /*background-color: black; /*cor de fundo*/
+    background: url('img/fundo-de-onda-branca-suave.avif');/*imgame de fundo*/
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    
+    
+}
+nav{
+    background-color:  rgba(1, 7, 19, 0.288);
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: -350px;
+    transition: all .5s;
+}
+ul{
+    /*display:flex; /* coloca um do lado do outro*/
+    /*justify-content: space-between;/*um espaço pro outro*/
+    list-style-type: none; /*tira as bolinhas da frente*/
+    /*align-items: center; /* verdicamente alinhando ao centro */
+    padding: 5px; /* distancia um pouquinha de cima e de baixo*/
+    font-weight: 700;/*fonte da letra em ser grossa ou fina*/
+    
+    top:50px;
+    position: absolute;
+    width: 100%;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+
+nav a{
+    color: rgb(253, 253, 253);/*cor do link*/
+text-decoration: none; /* tirando a linha do link*/
+display: block;
+padding: 20px 5px;
+
+}
+nav a:hover{
+background-color: rgba(245, 1, 54, 0.473) ;
+color: rgba(83, 0, 0, 0.973);}
+
+
+label{
+    
+    padding: 18px;
+    position: absolute;
+    z-index: 1; /*ele faz que esse elemento fica na frante do outro*/
+}
+img#icone{
+    width: 25px; /* tamanho do icone*/
+    display: flex;
+    
+  }
+input[type="checkbox"]{
+    display: none;
+}
+
+a{
+    color: rgba(255, 255, 255, 0);
+    
+}
+
+header{
+   
+    text-align: center;
+
+}
+
+section{
+    text-align: center;
+}
+
+header img{
+    width: 150px; /*estilizar a imagem*/
+    height: 150px; /*altura*/
+    margin: 50px;
+    border-radius: 60%; /* borda da foto pra deixar rendonda*/
+    border: 5px solid #801404d3; /* a cor da borda pada foto*/
+}
+
+.center{
+    text-align: center; /*para centralizar os elemento que esta no centro*/
+}
+
+h1,h4{
+    color:#580303;
+    text-align: center;
+}
+
+h2,h3,p{
+    color: #8d0404fa;
+    text-align: center;
+}
+
+footer{
+    text-align: center; /*para centralizar os elemento que esta no centro*/
+}
+ 
+img#icone{
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+img#icone:hover{
+    transform: scale(1.10);}
+
+img#gatinho{
+    border-radius: 50px 20px;
+    background: rgba(80, 5, 5, 0.925);
+
+}

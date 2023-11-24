@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel</title>
+    <link rel="stylesheet" href="horas.css">
+    <link rel="stylesheet" href="index.css">
+
+     
+</head>
+
+<body>
+
+    <input type="checkbox" id="chec">
+    <label  for="chec">
+        <img src="img/icon_traco_branco.png" alt="menu" id="icone">
+    </label>
+    <nav>
+        <ul id="menu">
+
+            <li>
+                <a href="index.html" id="q1">Home</a>
+            </li>
+            <li>
+                <a href="logo.html" id="q2">Login</a>
+            </li>
+            <li>
+                <a href="contact.html" id="q3">Contato</a>
+            </li>
+        </ul>
+    </nav>
+   
+    <header>
+       
+        <div class="center">
+            <img src="./img/chuck.jpg"></img>
+        </div>
+
+        <h1>Joel Roldão de Oliveira</h1>
+
+        <div class="wrapper" >
+            <div class="hora">
+                <div class="time">12:00:00 PM</div>
+            </div>
+            <span>
+    
+            </span>
+            <span></span>
+            <script>
+                setInterval(function(){
+                    const time = document.querySelector(".time");
+                    let date = new Date();
+                    let hours = date.getHours();
+                    let minutes = date.getMinutes();
+                    let seconds = date.getSeconds();
+                    let day_night = "AM"
+                    if(hours > 24){
+                        day_night = "PM";
+                        hours = hours - 12;
+                    }
+                    if(hours < 10){
+                        hours = "0" + hours;
+                    }
+                    if(minutes < 10){
+                        hours = "0" + minutes;
+                    }
+                    if(seconds < 10){
+                        hours = "0" + seconds;
+                    }
+                    time.textContent = hours + ":"+ minutes + ":"+ seconds + "" + day_night;
+    
+                })
+            </script>>
+        </div>
+       
+        <h2>Desenvolvedor Web</h2>
+    </header>
+    <main>
+        <!-- <section>
+            <h3>Sobre mim </h3>
+            <p>
+               Sou determinado
+            </p>
+            
+        </section>-->
+       <!---- <div class="center"><img src="./img/loroing.gif" alt="loroing" class="gif"></div>-->
+    </main>
+
+    <!-- <div class="btn">enviar</div>-->
+    <div class="card-container">
+        
+          <img src="./img/welcome.gif" alt="snoop" class="card" class="gif">
+     
+    </div>   
+    
+    <footer>
+        <p>Site criado por <a href="https://github.com/joelck007" id="q4">Joel Roldão de Oliveira</a></p>
+    </footer>
+
+</html>

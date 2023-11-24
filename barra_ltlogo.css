@@ -1,0 +1,48 @@
+nav{
+    background:#5b0aa779;;
+    width: 350px;
+    height: 100%;
+    position: absolute;
+    left: -350px;
+    transition: all .5s;
+}
+ul{
+    /*display:flex; /* coloca um do lado do outro*/
+    /*justify-content: space-between;/*um espaço pro outro*/
+    list-style-type: none; /*tira as bolinhas da frente*/
+    /*align-items: center; /* verdicamente alinhando ao centro */
+    padding: 5px; /* distancia um pouquinha de cima e de baixo*/
+    font-weight: 700;/*fonte da letra em ser grossa ou fina*/
+    
+    top:60px;
+    position: absolute;
+    width: 100%;
+}
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+}
+a{
+    color: rgb(253, 253, 253);/*cor do link*/
+    text-decoration: none; /* tirando a linha do link*/
+    display: block;
+    padding: 20px 5px;
+    
+}
+a:hover{
+    background-color: #290174;
+    color: #00ff88;
+}
+label{
+    
+    padding: 15px;
+    position: absolute;
+    z-index: 1; /*ele faz que esse elemento fica na frante do outro*/
+}
+img#icone{
+    width: 35px; /* tamanho do icone*/
+    display: flex;
+    
+  }
+input[type="checkbox"]{
+    display: none;
+}
